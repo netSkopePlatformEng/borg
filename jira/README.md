@@ -2,6 +2,13 @@
 
 Automate Jira ticket creation, updates, and queries using Claude Code and the Jira MCP server.
 
+## Prerequisites
+
+Before using Jira automation, ensure you have:
+- **Claude Code API Access** - See [API Access Guide](../getting-started/api-access.md)
+- **Claude Code Installed** - See [Installation Guide](../getting-started/install-claude-code.md)
+- **Jira MCP Server Configured** - See [Jira MCP Setup](../mcp-servers/jira-mcp-setup.md) (coming soon)
+
 ## Overview
 
 The Jira MCP server enables Claude Code to:

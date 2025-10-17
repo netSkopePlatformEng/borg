@@ -2,6 +2,16 @@
 
 Learn the essential concepts and workflows for using Claude Code effectively in your daily development work.
 
+## Prerequisites
+
+Before using Claude Code, ensure you have:
+
+1. **API Access** - For Netskope users, see [API Access Guide](api-access.md) to get Vertex AI credentials
+2. **Claude Code Installed** - See [Installation Guide](install-claude-code.md)
+3. **Environment Variables Set** - If using Netskope Vertex AI, ensure your shell has the required env vars configured
+
+**Note**: All examples in this guide assume you've completed the setup above. When you see `claude`, it means you have your environment properly configured.
+
 ## What is Claude Code?
 
 Claude Code is an AI-powered CLI that helps with:

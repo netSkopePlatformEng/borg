@@ -2,6 +2,14 @@
 
 Multi-cluster Kubernetes operations, best practices, and automation patterns using Claude Code and the k8s MCP server.
 
+## Prerequisites
+
+Before performing Kubernetes operations with Claude Code:
+- **Claude Code API Access** - See [API Access Guide](../getting-started/api-access.md)
+- **Claude Code Installed** - See [Installation Guide](../getting-started/install-claude-code.md)
+- **K8s MCP Server Configured** - See [Kubernetes MCP Setup](../mcp-servers/kubernetes-mcp-setup.md) (coming soon)
+- **Kubeconfig Access** - Ensure you have access to the clusters you want to manage
+
 ## Core Principle: Use MCP, Not Bash
 
 **CRITICAL**: For multi-cluster operations, ALWAYS use the `clusters_exec_all` MCP tool.

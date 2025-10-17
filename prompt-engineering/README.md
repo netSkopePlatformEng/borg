@@ -2,6 +2,15 @@
 
 Learn to write effective prompts that get the best results from Claude Code.
 
+## Prerequisites
+
+Before diving into prompt engineering:
+- **Claude Code API Access** - See [API Access Guide](../getting-started/api-access.md)
+- **Claude Code Installed** - See [Installation Guide](../getting-started/install-claude-code.md)
+- **Basic Understanding** - Read [Claude Code Basics](../getting-started/claude-code-basics.md)
+
+This guide assumes you have Claude Code running and are ready to learn how to use it effectively.
+
 ## Core Principles
 
 ### 1. Be Specific

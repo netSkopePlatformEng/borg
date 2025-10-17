@@ -2,11 +2,19 @@
 
 This guide walks you through installing and setting up Claude Code CLI, Anthropic's official command-line interface for AI-assisted development.
 
+## Important: Netskope Users Start Here
+
+**If you're at Netskope**, you need API access first:
+👉 **[Get API Access](api-access.md)** - Set up Vertex AI credentials before installing
+
+After getting API access, come back here to install the CLI.
+
 ## Prerequisites
 
 - macOS, Linux, or Windows (WSL2)
 - Terminal/command-line access
 - Internet connection
+- **For Netskope users**: API access configured (see link above)
 
 ## Installation
 
@@ -46,7 +54,13 @@ Claude Code CLI version x.x.x
 
 ## Authentication
 
-### First-Time Setup
+### For Netskope Users
+
+**Skip this section** if you're at Netskope - you're using Vertex AI authentication instead.
+
+Your authentication is handled via the service account credentials you configured in the [API Access Guide](api-access.md). The `GOOGLE_APPLICATION_CREDENTIALS` environment variable points to your key file.
+
+### For Non-Netskope Users
 
 1. Run Claude Code:
 ```bash
@@ -63,6 +77,8 @@ Claude Code stores authentication credentials securely in:
 - macOS: `~/.claude/`
 - Linux: `~/.claude/`
 - Windows: `~/.claude/`
+
+**Netskope users**: Your service account key is stored separately (e.g., `~/.claude/YOUR-NAME-claude-code-key.json`)
 
 ## Configuration
 

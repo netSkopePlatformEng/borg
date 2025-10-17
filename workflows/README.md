@@ -2,6 +2,15 @@
 
 Real-world automation patterns using Claude Code, MCP servers, and integrated tools. These workflows demonstrate how to combine multiple capabilities for powerful automation.
 
+## Prerequisites
+
+Before running these workflows, ensure you have:
+- **Claude Code API Access** - See [API Access Guide](../getting-started/api-access.md)
+- **Claude Code Installed** - See [Installation Guide](../getting-started/install-claude-code.md)
+- **MCP Servers Configured** - See [MCP Servers](../mcp-servers/README.md) for setup guides
+
+All workflow examples assume your environment is properly configured with the necessary credentials and MCP servers.
+
 ## Available Workflows
 
 ### [Multi-Cluster Operations](multi-cluster-operations.md)

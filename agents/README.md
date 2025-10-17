@@ -2,6 +2,14 @@
 
 Reusable AI agents for specialized development tasks. These agents can be invoked in any project to enforce standards and automate quality checks.
 
+## Prerequisites
+
+Before using these agents:
+- **Claude Code API Access** - See [API Access Guide](../getting-started/api-access.md)
+- **Claude Code Installed** - See [Installation Guide](../getting-started/install-claude-code.md)
+
+Agents are invoked through Claude Code and require proper authentication setup.
+
 ## Available Agents
 
 ### [Go Code Quality Agent](go-code-quality-agent.md)

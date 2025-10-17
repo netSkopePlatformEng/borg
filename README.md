@@ -21,6 +21,7 @@ The Borg repository is a **collective knowledge base** for AI-powered developmen
 ## What's Inside
 
 ### Getting Started
+- **[API Access](getting-started/api-access.md)** - Get Claude Code API access at Netskope (Vertex AI)
 - **[Install Claude Code](getting-started/install-claude-code.md)** - Get up and running with Claude Code CLI
 - **[Claude Code Basics](getting-started/claude-code-basics.md)** - Essential concepts and workflows
 
@@ -59,20 +60,29 @@ The Borg repository is a **collective knowledge base** for AI-powered developmen
 
 ## Quick Start
 
-### 1. Install Claude Code
+### 1. Get API Access (Netskope Only)
+```bash
+# See getting-started/api-access.md for detailed instructions
+# Contact Scott (sleibrand) to request access
+# Configure Vertex AI credentials from 1Password
+```
+
+### 2. Install Claude Code
 ```bash
 # See getting-started/install-claude-code.md for detailed instructions
 curl -sSL https://claude.ai/install.sh | bash
 ```
 
-### 2. Explore a Topic
+### 3. Explore a Topic
 Choose a directory based on what you want to learn:
 - New to AI-assisted development? Start with `getting-started/`
 - Need to automate Jira? Check out `jira/`
 - Working with Kubernetes? Visit `kubernetes/` and `mcp-servers/`
 - Building Go applications? See `agents/` for code quality patterns
 
-### 3. Try a Workflow
+**Note**: All guides assume you have API access and Claude Code installed. If you jumped ahead, make sure to complete steps 1-2 first.
+
+### 4. Try a Workflow
 ```bash
 # Example: Multi-cluster Kubernetes operations
 cd workflows/
