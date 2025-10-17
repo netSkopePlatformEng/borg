@@ -34,7 +34,7 @@ The Borg repository is a **collective knowledge base** for AI-powered developmen
 ### MCP Servers
 - **[MCP Overview](mcp-servers/README.md)** - Introduction to Model Context Protocol servers
 - **[Kubernetes MCP](mcp-servers/kubernetes-mcp-setup.md)** - Multi-cluster Kubernetes operations
-- **[Jira MCP](mcp-servers/jira-mcp-setup.md)** - Jira API integration
+- **[Atlassian MCP](jira/README.md#setup)** - Jira API integration (one-line setup)
 
 ### Workflows & Automation
 - **[Workflow Overview](workflows/README.md)** - Common automation patterns

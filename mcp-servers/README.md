@@ -24,38 +24,34 @@ Enables multi-cluster Kubernetes operations.
 
 **Setup**: See [kubernetes-mcp-setup.md](kubernetes-mcp-setup.md)
 
-### Jira MCP Server
-Automates Jira ticket management.
+### Atlassian MCP Server
+Automates Jira ticket management using the official Atlassian MCP server.
 
 **Capabilities**:
 - Create tickets (bugs, tasks, stories, CM tickets)
 - Update ticket fields and status
 - Query tickets using JQL
 - Add comments and attachments
+- Search issues and manage sprints
 
-**Setup**: See [jira-mcp-setup.md](jira-mcp-setup.md)
+**Setup**:
+```bash
+claude mcp add --scope user --transport sse atlassian https://mcp.atlassian.com/v1/sse
+```
+
+Authenticate with your Atlassian account when prompted. See [Jira Integration Guide](../jira/README.md) for details.
 
 ## Installation
 
-MCP servers are typically configured in Claude Code's settings. Each server has specific configuration requirements:
+Most MCP servers can be added using the `claude mcp add` command:
 
-```json
-{
-  "mcpServers": {
-    "kubernetes": {
-      "command": "/path/to/k8s-mcp-server",
-      "args": ["--config", "~/.kube/config"]
-    },
-    "jira": {
-      "command": "/path/to/jira-mcp-server",
-      "env": {
-        "JIRA_URL": "https://your-org.atlassian.net",
-        "JIRA_API_TOKEN": "your-token-here"
-      }
-    }
-  }
-}
+### Atlassian MCP (Recommended)
+```bash
+claude mcp add --scope user --transport sse atlassian https://mcp.atlassian.com/v1/sse
 ```
+
+### Other MCP Servers
+Some MCP servers may require manual configuration in Claude Code's settings with specific commands, arguments, or environment variables. Refer to the specific server's documentation for setup instructions.
 
 ## Using MCP Servers with Claude Code
 
@@ -155,7 +151,7 @@ Example use cases for custom servers:
 
 - **MCP Specification**: https://modelcontextprotocol.org
 - **Kubernetes MCP Setup**: [kubernetes-mcp-setup.md](kubernetes-mcp-setup.md)
-- **Jira MCP Setup**: [jira-mcp-setup.md](jira-mcp-setup.md)
+- **Atlassian MCP Setup**: See [Jira Integration Guide](../jira/README.md#setup) for one-line setup
 - **Claude Code Docs**: https://docs.claude.com/en/docs/claude-code
 
 ---

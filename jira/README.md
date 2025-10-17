@@ -7,7 +7,31 @@ Automate Jira ticket creation, updates, and queries using Claude Code and the Ji
 Before using Jira automation, ensure you have:
 - **Claude Code API Access** - See [API Access Guide](../getting-started/api-access.md)
 - **Claude Code Installed** - See [Installation Guide](../getting-started/install-claude-code.md)
-- **Jira MCP Server Configured** - See [Jira MCP Setup](../mcp-servers/jira-mcp-setup.md) (coming soon)
+- **Atlassian MCP Server** - See setup instructions below
+- **Atlassian Account** - Active Jira account with appropriate permissions
+
+## Setup
+
+Install the Atlassian MCP server with one command:
+
+```bash
+claude mcp add --scope user --transport sse atlassian https://mcp.atlassian.com/v1/sse
+```
+
+**What this does:**
+- Adds the official Atlassian MCP server to Claude Code
+- Uses SSE (Server-Sent Events) transport for real-time communication
+- Scoped to your user account
+- Connects to Atlassian's hosted MCP endpoint
+
+**Authentication:**
+When you first use Jira features, you'll be prompted to authenticate with your Atlassian account. Follow the browser prompts to grant Claude Code access to your Jira workspace.
+
+**Verification:**
+Test the setup by asking Claude:
+```
+List my recent Jira tickets
+```
 
 ## Overview
 
@@ -25,12 +49,6 @@ The Jira MCP server enables Claude Code to:
 - **[Automation Examples](jira-automation-examples.md)** - Real-world automation patterns
 
 ## Quick Start
-
-### Prerequisites
-
-- Jira MCP server installed and configured
-- Jira API token with appropriate permissions
-- Claude Code installed
 
 ### Basic Usage
 
@@ -223,7 +241,7 @@ See [Automation Examples](jira-automation-examples.md) for detailed workflows.
 ## Troubleshooting
 
 ### Authentication Issues
-Ensure your Jira API token is configured in the MCP server settings.
+If you're prompted to authenticate, follow the browser flow to grant Claude Code access to your Atlassian workspace. Make sure you're logged into the correct Jira instance (netskope.atlassian.net).
 
 ### Custom Field Errors
 Check field IDs in [Custom Fields Reference](custom-fields-reference.md) - they vary by project.
