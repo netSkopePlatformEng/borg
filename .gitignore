@@ -1,0 +1,36 @@
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Credentials and secrets
+*.key
+*.pem
+*.crt
+*.token
+*.secret
+.env
+.env.*
+credentials.json
+config.json
+
+# Claude-specific
+.claude/todos/
+.claude/shell-snapshots/
+.claude/statsig/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
