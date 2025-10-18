@@ -24,6 +24,7 @@ The Borg repository is a **collective knowledge base** for AI-powered developmen
 - **[API Access](getting-started/api-access.md)** - Get Claude Code API access at Netskope (Vertex AI)
 - **[Install Claude Code](getting-started/install-claude-code.md)** - Get up and running with Claude Code CLI
 - **[Claude Code Basics](getting-started/claude-code-basics.md)** - Essential concepts and workflows
+- **[Known Issues](getting-started/known-issues.md)** - Known issues, workarounds, and solutions
 
 ### Jira Integration
 - **[Jira Overview](jira/README.md)** - Automating Jira with Claude Code
